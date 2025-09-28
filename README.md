@@ -51,6 +51,12 @@ pytest tests/ --alluredir=allure-results
 
 allure serve allure-results
 
+python3 -m pytest test/ -v --alluredir=allure-results
+
+python3 -m pytest test/test_ui.py -v --alluredir=allure-results
+
+python3 -m pytest test/test_api.py -v --alluredir=allure-results
+
 ✅ Что покрыто тестами
 UI (моки):
 Загрузка главной страницы
